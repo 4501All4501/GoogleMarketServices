@@ -25,6 +25,7 @@ jobs:
 
     - name: Build with Gradle
       run: gradle assembleDebug
+      working-directory: Android/MarketServicesPluginApp
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
